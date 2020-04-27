@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <ApplicationInsightsResourceId>/subscriptions/eff1fe94-7785-417a-ab31-7aee6da5e333/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/DCG.Equipment.WebAPI</ApplicationInsightsResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/976fe410-eaed-49b2-99b1-23293746791a/resourcegroups/deere-ipaas-rfp-rg/providers/microsoft.insights/components/dcg-equipmentwebapi</ApplicationInsightsResourceId>
   </PropertyGroup>
 
   <ItemGroup>
