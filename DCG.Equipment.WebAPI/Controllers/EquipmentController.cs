@@ -28,12 +28,16 @@ namespace DCG.Equipment.WebAPI.Controllers
         [HttpPost("equiment/details")]
         public Equipment GetEquipmentDetails(string modelNumber)
         {
+            if (modelNumber == "-1")
+                throw new ApplicationException($"Invalid Model Number {0}");
             return _equipmentService.GetByModelNumber(modelNumber);
         }
 
         [HttpPost("equipment/similar")]
         public Equipment GetSimilarMachine(string modelNumber)
         {
+            if (modelNumber == "-1")
+                throw new ApplicationException($"Invalid Model Number {0}");
             return _equipmentService.GetRandomEquipment();
         }
     }

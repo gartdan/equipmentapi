@@ -21,6 +21,8 @@ namespace DCG.Equipment.WebAPI.Controllers
         [HttpPost("pin/search")]
         public PartManifest PinSearch(string pin)
         {
+            if (pin == "-1")
+                throw new ApplicationException($"Invalid pin:{0}");
             this._telemetry.TrackEvent($"PinSearch Called - {pin}");
             var manifest = new PartManifest() { Pin = pin };
             manifest.ModelNumber = "6215R";
