@@ -19,11 +19,25 @@ namespace DCG.Equipment.WebAPI.Controllers
             return "Hello";
         }
 
+        [HttpGet("equipment/nearestdealer")]
+        public Dealer NearestDealer(string latitude = "41.881832", string longitude = "-87.623177", string range = "5m")
+        {
+            return Dealer.GetRandomDealer();
+        }
+
+        [HttpPost("equipment/topseller")]
+        public Equipment GetTopSeller(string dealerId)
+        {
+            return GetEquipmentDetails(dealerId);
+        }
+
         [HttpPost("equipment/bytype")]
         public IList<Equipment> GetEquipmentByType(string equipmentType)
         {
             return _equipmentService.GetEquipmentByType(equipmentType);
         }
+
+        
 
         [HttpPost("equiment/details")]
         public Equipment GetEquipmentDetails(string modelNumber)
