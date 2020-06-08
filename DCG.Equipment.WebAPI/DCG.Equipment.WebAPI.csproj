@@ -3,10 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <ApplicationInsightsResourceId>/subscriptions/976fe410-eaed-49b2-99b1-23293746791a/resourcegroups/deere-ipaas-rfp-rg/providers/microsoft.insights/components/dcg-equipmentwebapi</ApplicationInsightsResourceId>
+    <UserSecretsId>3cae8363-239a-43bd-8a18-71bb5fbae841</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.12.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets" Version="1.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.3.3" />
   </ItemGroup>
