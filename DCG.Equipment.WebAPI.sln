@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCG.Equipment.WebAPI", "DCG.Equipment.WebAPI\DCG.Equipment.WebAPI.csproj", "{CADA9AF0-481E-4F14-96A9-FD07514C7886}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DCG.Equipment.WebAPI", "DCG.Equipment.WebAPI\DCG.Equipment.WebAPI.csproj", "{CADA9AF0-481E-4F14-96A9-FD07514C7886}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusListener", "ServiceBusListener\ServiceBusListener.csproj", "{96F732C1-3786-4DE1-9B5A-7287399EA340}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CADA9AF0-481E-4F14-96A9-FD07514C7886}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CADA9AF0-481E-4F14-96A9-FD07514C7886}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CADA9AF0-481E-4F14-96A9-FD07514C7886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F732C1-3786-4DE1-9B5A-7287399EA340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F732C1-3786-4DE1-9B5A-7287399EA340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F732C1-3786-4DE1-9B5A-7287399EA340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F732C1-3786-4DE1-9B5A-7287399EA340}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
